@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Dean Winchester</title>
+        <meta property="og:title" content="Dean Winchester">
+        <meta property="og:locale" content="ru_RU">
+        <meta name="author" content="Dean Winchester">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Сайт визитка, портфолио и ссылки на соц.сети">
+        <meta property="og:url" content="https://deanchik.ru">
+        <meta property="og:site_name" content="Dean Winchester">
+        <meta property="og:image" content="{{ url_for('static', filename='assets/icon.jpg') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/icon.jpg" type="image/jpg">
+        <script src="https://sindresorhus.com/devtools-detect/index.js"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="{{ url_for('static', filename='js/text.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/typed.min.js') }}"></script>
+        <link rel="stylesheet" href="./css/vars.css">
+        <meta name="theme-color" content="#191919">
+    </head>
+    <body class="center blur">
+        <header class="center info">
+            <div class="center pizdec">
+                <div class="avatar-container"><img src="{{ url_for('static', filename='assets/icon.jpg') }}" oncontextmenu="return false;"
+                    class="avatar">
+                </div>
+                <h2><span id="name">Dean Winchester</span></h2>
+                <hr width="295">
+                <h3><span class="typed"></span><span class="typed-cursor"></span></h3>
+            </div>
+            <div class="center pizdec">
+                <h2>Links</h2>
+            </div>
+            <div class="buttons">
+                <a href="javascript://" class="mx-2 social-icon link" onclick="location.href='https://t.me/STIX_R'">Telegram</a>
+                <a href="javascript://" class="mx-2 social-icon link" onclick="location.href='https://github.com/Winchester-Dean'">GitHub</a>
+            </div>
+            <div class="buttons">
+                <a href="javascript://" class="mx-2 social-icon link" onclick="location.href='https://linkm.me/users/stix'">Link</a>
+            </div>
+        </header>
+    </body>
+</html>
