@@ -1,0 +1,43 @@
+  File "main.py", line 9
+    return render_template('index.html') 200
+                                         ^
+SyntaxError: invalid syntax
+  File "main.py", line 9
+    return render_template('index.html') 200
+                                         ^
+SyntaxError: invalid syntax
+ * Serving Flask app 'main'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:443
+ * Running on https://77.105.132.105:443
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 966-486-202
+185.114.72.206 - - [27/Dec/2024 02:01:27] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 939, in ensure_sync
+    return self.async_to_sync(func)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 960, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+185.114.72.206 - - [27/Dec/2024 02:01:28] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+185.114.72.206 - - [27/Dec/2024 02:01:29] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+ * Detected change in '/root/site/main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 966-486-202
